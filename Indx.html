@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f33c049e3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Soham </span></br>from Pune</h1>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/luffy.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="aboutme">About Me</h1>
+                    <p class="sub-title">Motivated IT undergraduate and Frontend Web Developer with hands-on experience in building responsive and user-friendly web interfaces using HTML, CSS, JavaScript, and Bootstrap. Strong foundation in web development concepts with a keen interest in creating visually appealing and performance-optimized websites. </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links "onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links "onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+
+
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 2025 - Feb 2025</span><br>Frontend Web Developer at Motion Cut</li>
+                            
+                        </ul>
+                    </div>
+
+                    
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025 - Current</span><br>Web Development at Nxtwave</li>
+                            <li><span>2022 - 2027</span><br>BE in Information Technology at SCOE</li>
+                            <li><span>2021 - 2022</span><br>XII at Creative Academy Pune</li>
+                            <li><span>2019 - 2020</span><br>X at Blossom Children's Academy Wai</li>
+                        </ul>
+                    </div>
+
+
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="aboutme">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design</h2>
+                    <p>abccccc</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX design</h2>
+                    <p>abccccc</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>web design</h2>
+                    <p>abccccc</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connect</p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents =  document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <body>
+</html>
